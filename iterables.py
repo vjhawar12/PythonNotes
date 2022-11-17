@@ -1,7 +1,11 @@
 # an iterable can be looped over / iterated with an iterator 
 # iterables need to have  __iter__() 
 # iterators are objects with state. they remember the position during iteration
+# iterators are also iterable meaning they also have __iter__()
 # iterators can also get the next value using the __next__() method that they contain
+
+# the __iter__() returns an iterator 
+# __next__() returns the next value or raises StopIterator
 
 lis = [1, 2, 3, 4, 5]
 
@@ -27,6 +31,6 @@ class Range: # creating custom range class
     
 ten = Range(0, 10)
 
+
 for i in ten: 
     print(i)
-    
